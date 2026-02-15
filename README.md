@@ -1,4 +1,5 @@
-# Threaded Dispatch in Rust Without `goto` : Tricking LLVM Into It !
+# Threaded Dispatch in Rust Without `goto`
+## Tricking LLVM into it !
 
 Write up by VBXQ (Haydar) 2026.
 
@@ -6,7 +7,7 @@ Write up by VBXQ (Haydar) 2026.
 
 If you've ever written an interpreter or a VM, you know the classic bottleneck: the dispatch loop
 
-```
+```rust
 loop {
     match opcode {
         ADD => { ... }
